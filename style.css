@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    height: 950px;
+    background-color: antiquewhite;
+}
+
+.calculator {
+    width: 500px;
+    height: 800px;
+    background-color: rgb(3, 3, 3);
+    margin: auto;
+
+
+}
+
+
+.creen {
+    width: 100%;
+    height: 30%;
+    background-color: white;
+}
+
+#operation-button {
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+#button {
+    background-color: white;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    font-size: 23px;
+}
+
+.button-0 {
+    width: 180px;
+    height: 90px;
+    background-color: white;
+    border-radius: 30rem;
+    font-size: 23px;
+}
