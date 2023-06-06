@@ -11,36 +11,36 @@ function myCreen(value) {
 
 //Result
 function myResult() {
-  let y = 0;
+  let numberCreen = 0;
   document.getElementById("creen-result").style.fontSize = "40px";
-  let x = document.getElementById("calculation").innerHTML;
+  let numberCalculation = document.getElementById("calculation").innerHTML;
 
 //Phép tính mũ 2
-if (x.includes("²")) {
-  let z = x.replace("²", " ");
-  y = Number(z);
-  return document.getElementById("creen-result").innerHTML = Math.pow(y,2);
+if (numberCalculation.includes("²")) {
+  let isPermutation = numberCalculation.replace("²", " ");
+  numberCreen = Number(isPermutation);
+  return document.getElementById("creen-result").innerHTML = Math.pow(numberCreen,2);
 }
 
 
 
 
   //Phép tính căn bậc 2
-  if (x.includes("√")) {
-    let z = x.replace("√", " ");
-    y = Number(z);
-    return document.getElementById("creen-result").innerHTML = Math.sqrt(y);
+  if (numberCalculation.includes("√")) {
+    let isPermutation = numberCalculation.replace("√", " ");
+    numberCreen = Number(isPermutation);
+    return document.getElementById("creen-result").innerHTML = Math.sqrt(numberCreen);
   }
 
 
 
 
   //Phép tính cơ bản
-  y = eval(x);
+  numberCreen = eval(numberCalculation);
 
-  if (y / y.toFixed(2) != 1) {
-    document.getElementById("creen-result").innerHTML = y.toFixed(2);
+  if (numberCreen/ numberCreen.toFixed(2) != 1) {
+    document.getElementById("creen-result").innerHTML = numberCreen.toFixed(2);
   } else {
-    document.getElementById("creen-result").innerHTML = y.toFixed(0);
+    document.getElementById("creen-result").innerHTML = numberCreen.toFixed(0);
   }
 }
