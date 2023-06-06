@@ -6,41 +6,71 @@
 
 .app {
     height: 950px;
-    background-color: antiquewhite;
+    background-color:white;
+  
 }
 
 .calculator {
     width: 500px;
     height: 800px;
-    background-color: rgb(3, 3, 3);
-    margin: auto;
-
-
+    border-style: solid;
+    border-color: rgb(109, 101, 101);
+    margin: 20px auto;
 }
 
-
+/* creen */
 .creen {
     width: 100%;
     height: 30%;
     background-color: white;
 }
 
-#operation-button {
+#calculation{
+    border:solid;
+    border-color: rgb(109, 101, 101);
+    height: 90px;
+}
+
+#creen-result{
+ border:solid;
+    border-color: rgb(109, 101, 101);
+    height: 60px;
+    margin-top: 40px;
+}
+
+/* .operation */
+.operation{
+    background-color: ivory;
+}
+
+.operation-button {
     height: 25%;
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
 }
 
-#button {
+.button {
     background-color: white;
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    font-size: 23px;
+    font-size: 25px;
+    border-style: solid;
+    border-color: black;
 }
 
-.button-1 {
+.button-calculation {
+background-color: orange;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    font-size: 23px;
+
+}
+
+
+#button0 {
     width: 180px;
     height: 90px;
     background-color: white;

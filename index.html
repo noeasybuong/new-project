@@ -1,102 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
 
-    <title>Calculator</title>
-</head>
+        <title>Calculator</title>
+    </head>
 
-<body>
+    <body>
 
-    <div class="app">
+        <div class="app">
 
-        <div class=" calculator">
-            <div class="creen">
-                <div class="">
-                    <h2 id="calculation" class="creen-calculation"> </h2>
-                    <h2 class="creen-result"> </h2>
-                </div>
-            </div>
-
-            <div class="operation">
-                <div class="operation-button" id="operation-button">
+            <div class=" calculator">
+                <div class="creen">
                     <div>
-                        <button id="button">AC</button>
-                    </div>
-                    <div>
-                        <button onclick="myCreen()" id="button" name="button-0" value="√">√</button>
-                    </div>
-                    <div>
-                        <button onclick="myCreen()" id="button" name="button-0" value="x²">x²</button>
-                    </div>
-                    <div>
-                        <button onclick="myCreen()" id="button" name="button-0" value="×">×</button>
+                        <h2 id="calculation"></h2>
+
+                        <h2 id="creen-result"> </h2>
                     </div>
                 </div>
 
-                <div id="operation-button">
-                    <div>
-                        <button onclick="myCreen()" id="button14" name="button-0" value="7">7</button>
-                    </div>
-                    <div>
-                        <button onclick="myCreen()" id="button13" name="button-0" value="8">8</button>
-                    </div>
-                    <div>
-                        <button onclick="myCreen()" id="button12" name="button-0" value="9">9</button>
-                    </div>
-                    <div>
-                        <button onclick="myCreen()" id="button11" name="button-0" value="÷">÷</button>
-                    </div>
-                </div>
-
-                <div id="operation-button">
-
-                    <div>
-                        <button onclick="myCreen()" id="button10" name="button-0" value="4">4</button>
-                    </div>
-                    <div>
-                        <button onclick="myCreen()" id="button9" name="button-0" value="5">5</button>
-                    </div>
-                    <div>
-                        <button onclick="myCreen()" id="button8" name="button-0" value="6">6</button>
-                    </div>
-                    <div>
-                        <button onclick="myCreen()" id="button7" name="button-0" value="+">+</button>
+                <div class="operation">
+                    <div class="operation-button">
+                        <div>
+                            <button class="button" onclick="clearCreen()">AC</button>
+                        </div>
+                        <div>
+                            <button onclick="myCreen('√')" class="button">√</button>
+                        </div>
+                        <div>
+                            <button onclick="myCreen('²')" class="button">x²</button>
+                        </div>
+                        <div>
+                            <button onclick="myCreen('*')" class="button-calculation">×</button>
+                        </div>
                     </div>
 
-                </div>
-
-                <div id="operation-button">
-                    <div>
-
-                        <button onclick="myCreen()" id="button6" name="button-0" value="1">1</button>
-                    </div>
-                    <div>
-                        <button onclick="myCreen()" id="button5" name="button-0" value="2">2</button>
-                    </div>
-                    <div>
-                        <button onclick="myCreen()" id="button4" name="button-0" value="3">3</button>
-                    </div>
-                    <div>
-                        <button onclick="myCreen()" id="button3" name="button-0" value="-">-</button>
+                    <div class="operation-button">
+                        <div>
+                            <button onclick="myCreen('7')" class="button">7</button>
+                        </div>
+                        <div>
+                            <button onclick="myCreen('8')" class="button">8</button>
+                        </div>
+                        <div>
+                            <button onclick="myCreen('9')" class="button">9</button>
+                        </div>
+                        <div>
+                            <button onclick="myCreen('/')" class="button-calculation">÷</button>
+                        </div>
                     </div>
 
-                </div>
+                    <div class="operation-button">
 
-                <div id="operation-button">
+                        <div>
+                            <button onclick="myCreen('4')" class="button">4</button>
+                        </div>
+                        <div>
+                            <button onclick="myCreen('5')" class="button">5</button>
+                        </div>
+                        <div>
+                            <button onclick="myCreen('6')" class="button">6</button>
+                        </div>
+                        <div>
+                            <button onclick="myCreen('+')" class="button-calculation">+</button>
+                        </div>
 
-                    <div>
-                        <button onclick="myCreen()" class="button-1" id="button2" name="button-0" value="0">0</button>
                     </div>
-                    <div>
-                        <button onclick="myCreen()" id="button1" name="button-0" value=",">.</button>
+
+                    <div class="operation-button">
+                        <div>
+
+                            <button onclick="myCreen('1')" class="button">1</button>
+                        </div>
+                        <div>
+                            <button onclick="myCreen('2')" class="button">2</button>
+                        </div>
+                        <div>
+                            <button onclick="myCreen('3')" class="button">3</button>
+                        </div>
+                        <div>
+                            <button onclick="myCreen('-')" class="button-calculation">-</button>
+                        </div>
+
                     </div>
-                    <div>
-                        <button onclick="myResult()" id="button0">=</button>
+
+                    <div class="operation-button">
+
+                        <div>
+                            <button onclick="myCreen('0')" id="button0">0</button>
+                        </div>
+                        <div>
+                            <button onclick="myCreen('.')" class="button">.</button>
+                        </div>
+                        <div>
+                            <button onclick="myResult()" class="button-calculation">=</button>
+                        </div>
+
                     </div>
 
                 </div>
@@ -105,10 +108,8 @@
 
         </div>
 
-    </div>
 
-
-    <script src="main.js"></script>
-</body>
+        <script src="main.js"></script>
+    </body>
 
 </html>
