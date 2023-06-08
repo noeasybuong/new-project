@@ -6,8 +6,8 @@
 
 .app {
     height: 950px;
-    background-color:white;
-  
+    background-color: white;
+
 }
 
 .calculator {
@@ -25,21 +25,21 @@
     background-color: white;
 }
 
-#calculation{
-    border:solid;
+#calculation {
+    border: solid;
     border-color: rgb(109, 101, 101);
     height: 90px;
 }
 
-#creen-result{
- border:solid;
+#creen-result {
+    border: solid;
     border-color: rgb(109, 101, 101);
     height: 60px;
     margin-top: 40px;
 }
 
 /* .operation */
-.operation{
+.operation {
     background-color: ivory;
 }
 
@@ -61,12 +61,13 @@
 }
 
 .button-calculation {
-background-color: orange;
+    background-color: orange;
     width: 90px;
     height: 90px;
     border-radius: 50%;
     font-size: 23px;
-
+    border-style: solid;
+    border-color: black;
 }
 
 
@@ -76,4 +77,27 @@ background-color: orange;
     background-color: white;
     border-radius: 30rem;
     font-size: 23px;
+    border-style: solid;
+    border-color: black;
+}
+
+
+.AllbuttonRemove {
+    background-color: orange;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    font-size: 23px;
+    border-style: solid;
+    border-color: black;
+}
+
+.square {
+    background-color: white;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    font-size: 25px;
+    border-style: solid;
+    border-color: black;
 }

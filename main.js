@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".buttonRemoveAll").click(function () {
+  $(".AllbuttonRemove").click(function () {
     $("#calculation").html(" ");
     $("#creen-result").html(" ");
   });
@@ -8,6 +8,7 @@ $(document).ready(function () {
 
 $("#calculation").css({ "font-size": "40px" });
 $("#creen-result").css({ "font-size": "40px" });
+
 //Creen
 
 
@@ -16,18 +17,24 @@ $(document).ready(function () {
   $(".button").click(function () {
     var a = $(this).html()
 
-    $("#calculation").html($("#calculation").html() + a)
-
-
-
-
-
-
+    $("#calculation").html(function () {
+      return $("#calculation").html() + a
+    })
   })
 
 })
 
+$(document).ready(function () {
+  $(".square").click(function () {
+    $("#calculation").html(function () {
+      var changeSquare = $(".square").html()
+      var sa = $(this).html() + changeSquare
+      return sa.replace("x", "")
 
+    })
+
+  })
+})
 
 
 //Result
@@ -40,8 +47,8 @@ $(document).ready(function () {
   $(".answer").click(function () {
     let numberCalculation = $("#calculation").html()
 
-    if (numberCalculation.includes("x²")) {
-      let isPermutation = numberCalculation.replace("x²", " ");
+    if (numberCalculation.includes("²")) {
+      let isPermutation = numberCalculation.replace("²", " ");
       numberCreen = Number(isPermutation);
       $("#creen-result").html(function () {
         return Math.pow(numberCreen, 2)
